@@ -27,12 +27,12 @@ session_start();
     <?php
     // Lo que le estamos diciendo es, que si hay una nueva visita sume al contador de num_visites lo sume y salga por pantalla con texto.
     if (isset($_SESSION['visites'])) {
-        $_SESSION['visites']++; // Incrementa el comptador
+        $_SESSION['visites']++; 
         $num_visites = $_SESSION['visites'];
         echo "<p>Benvingut/da de nou! Aquesta és la teva visita número $num_visites durant aquesta sessió.</p>";
     // Lo que le estamos diciendo es que si no hay visitas registradas printe un mensaje por pantalla diferente dando la bienvenida.
     } else {
-        $_SESSION['visites'] = 1; // Primera visita
+        $_SESSION['visites'] = 1; 
         echo "<p>Benvingut/da! Aquesta és la teva primera visita durant aquesta sessió.</p>";
     }
     ?>
